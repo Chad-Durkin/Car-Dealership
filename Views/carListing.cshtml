@@ -1,0 +1,15 @@
+@{
+    Layout="Shared/_Layout.cshtml";
+}
+        <h1>Cars we have for sale!</h1>
+        <ul id="car-listing">
+            @foreach(var newCar in Model)
+            {
+                <div class="panel carItem">
+                <h2><strong><em>@newCar.GetMake(), @newCar.GetModel()</em></strong></h2>
+                <h3>Color: @newCar.GetColor()</h3>
+                <h3>Miles: @newCar.GetMiles()</h3>
+                <h3>Price: $@newCar.GetPrice()</h3>
+                </div>
+            }
+        </ul>

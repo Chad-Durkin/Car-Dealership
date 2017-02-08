@@ -1,0 +1,32 @@
+@{
+    Layout="Shared/_Layout.cshtml";
+}
+
+<h1>Add your car into our car dealership listings!</h1>
+<form class="addCar" action="/addCar" method="post">
+    <div class="form-group">
+        <label for="carMake">Vehicle Make:</label>
+        <input id="car-make" name="carMake" class="form-control" type="text">
+    </div>
+    <div class="form-group">
+        <label for="carModel">Vehicle Model:</label>
+        <input id="car-model" name="carModel" class="form-control" type="text">
+    </div>
+    <div class="form-group">
+        <label for="carColor">Vehicle Color:</label>
+        <input id="car-color" name="carColor" class="form-control" type="text">
+    </div>
+    <div class="form-group">
+        <label for="carYear">Vehicle Year:</label>
+        <input id="car-year" name="carYear" class="form-control" type="number">
+    </div>
+    <div class="form-group">
+        <label for="carMile">Vehicle Miles:</label>
+        <input id="car-mile" name="carMile" class="form-control" type="number">
+    </div>
+    <div class="form-group">
+        <label for="carPrice">Vehicle Price:</label>
+        <input id="car-price" name="carPrice" class="form-control" type="number">
+    </div>
+    <button id="add-car-btn" type="submit" name="addCarButton" class="btn btn-primary">Add Car</button>
+</form>

@@ -1,0 +1,32 @@
+@{
+    Layout="Shared/_Layout.cshtml";
+}
+
+<h1>Search for a car in our car dealership listings!</h1>
+<form class="searchCar" action="/carListing">
+    <div class="form-group">
+        <label for="carModel">Vehicle Model:</label>
+        <input id="search-car-model" name="searchCarModel" class="form-control" type="text">
+    </div>
+    <div class="form-group">
+        <label for="carMake">Vehicle Make:</label>
+        <input id="search-car-make" name="searchCarMake" class="form-control" type="text">
+    </div>
+    <div class="form-group">
+        <label for="carColor">Vehicle Color:</label>
+        <input id="search-car-color" name="searchCarColor" class="form-control" type="text">
+    </div>
+    <div class="form-group">
+        <label for="carYear">Vehicle Year:</label>
+        <input id="search-car-year" name="searchCarYear" class="form-control" type="text">
+    </div>
+    <div class="form-group">
+        <label for="carMile">Vehicle Mile:</label>
+        <input id="search-car-mile" name="searchCarMile" class="form-control" type="text">
+    </div>
+    <div class="form-group">
+        <label for="carPrice">Vehicle Price:</label>
+        <input id="search-car-price" name="searchCarPrice" class="form-control" type="text">
+    </div>
+    <button id="search-car-btn" type="submit" name="addCarButton" class="btn btn-primary">Search for vehicle!</button>
+</form>
